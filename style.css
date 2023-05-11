@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
    
-   background-color: rgb(143, 177, 187);
+   background-color: rgb(160, 199, 212);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,26 +36,29 @@ header .main{
     margin-left: 23%;
     margin-top: 20px;
     float: left;
-
+user-select: none;
 }
 header .item{
     float: right;
     margin-top: 60px;
     margin-right: 22%;
+    user-select: none;
 
 }
 header .item a{
     margin-right: 20px;
     text-decoration: none;
-    color: black;
-    border: 2px solid black;
+    color: rgb(246, 253, 255);;
+    border: 2px solid rgb(4, 70, 90);
     border-radius: 10px;
     padding: 2px 5px 2px 5px;
-    box-shadow: 3px 2px 3px 0px black;
+    box-shadow: 2px 2px 1px 2px rgb(4, 70, 90);
+    background-color: rgb(4, 70, 90);
 }
 header .item a:hover{
     
     background-color: black;
+    box-shadow: 2px 2px 1px 2px rgb(0, 0, 0);
     color:white;
 }
 
@@ -65,7 +68,7 @@ header h1{
     margin-top:15% ;
     font-weight: 900;
 
-
+user-select: none;
 }
 header p{
     
@@ -74,8 +77,8 @@ header p{
     word-spacing: 10px;
     padding-bottom: 5px;
   font-family: 'montsarrat',sans-serif
-  
-    
+
+ 
     
 }
 header #con{
@@ -83,16 +86,17 @@ header #con{
     text-align: center;
     font-weight: 700;
  padding: 5px 30px 5px 30px;
-  color: rgb(184, 87, 87);
+  color: rgb(255, 255, 255);
+  user-select: none;
   
 }
 header #con a{
-    border: 3px solid rgb(165, 82, 82);
+    border: 3px solid rgb(4, 70, 90);
     border-radius: 20px;
     width: 30px;
-    background-color: aliceblue;
+    background-color: rgb(4, 70, 90);
     text-decoration: none;
-   
+    box-shadow: 2px 2px 1px 2px rgb(4, 70, 90);
 }
 .s  {
     margin-top: 15%;
@@ -106,7 +110,8 @@ header #con a{
   border: 2px solid black;
   border-radius: 100px;
   padding: 10px 30px 10px 30px;
-  box-shadow: 10px 5px 5px 0px black;
+  box-shadow: 10px 5px 5px 2px rgb(4, 70, 90);
+  user-select: none;
 }
 .s a:hover{
     background-color: black;
@@ -162,7 +167,7 @@ border: 1px solid transparent;
 background-color: aliceblue;
 width: 50%;
 height: 80%;
-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+box-shadow: 5px 5px 5px 0px rgb(4, 70, 90);
 }
 
 .textbox{
@@ -171,13 +176,13 @@ box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
     width: 50%;
     height: 80%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px 0px rgb(4, 70, 90);
 }
 footer{
     
     margin-bottom:0;
     padding-bottom: 0;
-    background-color: rgb(22, 33, 44);
+    background-color: rgb(15, 15, 37);
 
 }
 #fot{
@@ -235,6 +240,7 @@ article #fot1{
 }
 h3{
     margin-top: 5px;
+    user-select: none;
 }
 
 article #fot1 .r1{
@@ -265,6 +271,7 @@ h2{
     margin: 5px;
     box-sizing: border-box;
     border-bottom: 5px solid rgb(221, 11, 11);
+    user-select: none;
 }
 p{
     font-size: small;
@@ -285,7 +292,94 @@ p{
     text-decoration: none;
 }
 
+@media (max-width: 360px) {
+    *{
+        padding: none;
+        margin: none;
+    }
+    header .count .main a{
+       margin-left: 50%;
+    }
+    body{
+    background-color: rgb(105, 143, 155);
+    }
+    header .s{
+        margin-left: 0;
+        width: 50px;
+       
+        margin-top: 20%;
+    }
+    header .s a{
+        font-size: 60px;
+    }
 
+    header .item {
+       margin-right: 0%;
+       
+       display: flex;
+       margin-bottom: 20px;
+    }
+    header .item a{
+        margin-left: 1%;
+        width: 53px;
+        padding:0px 5px 0px 0px;
+    }
+  #section #sel #row1{
+    flex-direction: column;
+    margin-top: 5px;
+    padding-bottom: 50px;
+    
+  }
+  #section #sel #row2{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+ .textbox{
+    width: 100%;
+  }
+.imgbox{
+    width: 100%;
+  }
+  h2{
+    font-size: 15px;
+    user-select: none;
+  }
+  .textbox p{
+    font-size: 10px;
+  }
+  .more{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 100px;
+  }
+  article #fot1{
+    flex-direction: column;
+   margin-top: 75%;
+  }
+  article #fot1 .r1{
+    width: 100%;
+
+  }
+  article #fot1 .r2{
+    width: 100%;
+  }
+  article #fot1 .r3{
+    width: 100%;
+  }
+  footer{
+    margin-top: 100%;
+    margin-bottom:0;
+    padding-bottom: 0;
+    background-color: rgb(22, 33, 44);
+    
+    
+    bottom: 0px;
+  }
+  footer #fot #follow{
+    margin-left: 20%;
+  }
+}
 
 
 
